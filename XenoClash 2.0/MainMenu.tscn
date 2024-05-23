@@ -1,0 +1,223 @@
+[gd_scene load_steps=27 format=3 uid="uid://cwpxvktmnid6c"]
+
+[ext_resource type="Script" path="res://MainMenu.gd" id="1_7xoqr"]
+[ext_resource type="Texture2D" uid="uid://cixoqr3dqdoc6" path="res://Background 1.0.jpg" id="1_tk0mt"]
+[ext_resource type="FontFile" uid="uid://bpxomquktwmn4" path="res://StarRenegades-JR9Va.ttf" id="2_60jnb"]
+[ext_resource type="AudioStream" uid="uid://d2aqeprbcxjsq" path="res://AlienMusic.mp3" id="5_2chof"]
+[ext_resource type="Texture2D" uid="uid://dlgk5gjkaseiy" path="res://Godot Engine.png" id="6_3cu7r"]
+
+[sub_resource type="Theme" id="Theme_f1ikb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ffrk5"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2s5qc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mv06f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pfk4w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hvvol"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_27gaa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2j2sg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_35yf3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4kg2l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_u5kjr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tfcbk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hxkyi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dahmi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bkk03"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_aiuax"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qwida"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ghv4y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q67ie"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a4yu6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3e6jk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_f1ikb")
+script = ExtResource("1_7xoqr")
+
+[node name="Main Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_tk0mt")
+expand_mode = 2
+
+[node name="Main Container" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 75
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 110
+
+[node name="TITLES" type="VBoxContainer" parent="Main Container"]
+layout_mode = 2
+theme_override_constants/separation = -5
+
+[node name="Main Ttile" type="Label" parent="Main Container/TITLES"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.14
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 3
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 80
+text = "XENOCLASH"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle" type="Label" parent="Main Container/TITLES"]
+layout_mode = 2
+size_flags_vertical = 2
+size_flags_stretch_ratio = 0.3
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 50
+text = "INVASION"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SubTitle2" type="Label" parent="Main Container/TITLES"]
+layout_mode = 2
+size_flags_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 15
+text = "Stand Together. Defend the Future"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BUTTONS" type="VBoxContainer" parent="Main Container/TITLES"]
+layout_mode = 2
+
+[node name="PLAY" type="Button" parent="Main Container/TITLES/BUTTONS"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 4
+theme_override_constants/h_separation = 10
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ffrk5")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2s5qc")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_mv06f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pfk4w")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hvvol")
+text = "PLAY"
+
+[node name="SETTINGS" type="Button" parent="Main Container/TITLES/BUTTONS"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(0, 0.96209, 0.843961, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_27gaa")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_2j2sg")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_35yf3")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_4kg2l")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_u5kjr")
+text = "SETTINGS"
+
+[node name="EXIT" type="Button" parent="Main Container/TITLES/BUTTONS"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(1, 0.152042, 0.101368, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tfcbk")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_hxkyi")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_dahmi")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bkk03")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_aiuax")
+text = "EXIT"
+
+[node name="Sub Container" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -39.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Credits" type="VBoxContainer" parent="Sub Container"]
+layout_mode = 2
+size_flags_vertical = 8
+alignment = 1
+
+[node name="Credits" type="Button" parent="Sub Container/Credits"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+theme_override_colors/font_hover_color = Color(1, 0.886275, 0, 1)
+theme_override_fonts/font = ExtResource("2_60jnb")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxEmpty_qwida")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_ghv4y")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_q67ie")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_a4yu6")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3e6jk")
+text = "CREDITS
+"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_2chof")
+autoplay = true
+
+[node name="ENGINE LOGO" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1085.0
+offset_top = 14.0
+offset_right = 1135.0
+offset_bottom = 63.0
+texture = ExtResource("6_3cu7r")
+expand_mode = 2
+
+[connection signal="pressed" from="Main Container/TITLES/BUTTONS/PLAY" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="Main Container/TITLES/BUTTONS/EXIT" to="." method="_on_exit_pressed"]
